@@ -1,0 +1,31 @@
+### Get all products
+GET http://localhost:8800/api/products
+
+### get a product by ID
+GET http://localhost:8800/api/products/2
+
+
+### delete a product by ID
+DELETE http://localhost:8800/api/products/1
+
+### create a new product
+POST http://localhost:8800/api/products
+Content-Type: application/json
+
+{
+  "name": "New Product",
+  "description": "This is a new product",
+  "price": 19.99
+}
+
+
+### update a product by ID
+PUT http://localhost:8800/api/products/2
+Content-Type: application/json
+
+{
+  "name": "Updated Product",
+  "description": "This is an updated product",
+  "price": 29.99
+}
+
